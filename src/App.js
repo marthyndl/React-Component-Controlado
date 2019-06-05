@@ -27,6 +27,9 @@ class App extends Component {
           onChangeTipo={(tipo) => {
             this.setState({ tipo })
           }}
+          onClickAceptar={() => {
+            console.log(this.state);
+          }}
         />
       </Fragment>
     )

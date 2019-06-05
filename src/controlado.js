@@ -5,7 +5,8 @@ function Controlado(props) {
         tamano,
         tipo,
         onChangeTamano,
-        onChangeTipo
+        onChangeTipo,
+        onClickAceptar
     } = props;
 
     return (
@@ -44,7 +45,9 @@ function Controlado(props) {
                 </li>
             </ul>
 
-            <button>Aceptar</button>
+            <button
+                onClick={onClickAceptar}
+            >Aceptar</button>
         </Fragment>
     )
 }
